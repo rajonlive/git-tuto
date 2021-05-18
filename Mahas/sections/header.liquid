@@ -1,0 +1,24 @@
+<header>
+{{ section.settings.email }}
+{{ section.settings.phone }}
+</header>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "id": "email",
+        "type": "text",
+        "label": "Email",
+        "default": "hello@shopifycanvas.com"
+      },
+      {
+        "id": "phone",
+        "type": "text",
+        "label": "phone",
+        "default": "0123456789"
+      }
+    ]
+  }
+{% endschema %}
