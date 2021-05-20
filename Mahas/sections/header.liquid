@@ -1,24 +1,26 @@
 <header>
-  <div class="row">
-    {{ section.settings.email }}
-    {{ section.settings.phone }}
-    <ul>
-        {% if section.settings.email != empty %}
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        {% endif %}
+  <div class="top-bar">
+    <div class="row">
+      {{ section.settings.email }}
+      {{ section.settings.phone }}
+      <ul>
+          {% if settings.social_link_facebook != empty %}
+            <li><a href="{{ settings.social_link_facebook }}"><i class="fab fa-facebook-f"></i></a></li>
+          {% endif %}
 
-        {% if section.settings.email != empty %}
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        {% endif %}
+          {% if settings.social_link_instagram != empty %}
+            <li><a href="{{ settings.social_link_instagram }}"><i class="fab fa-instagram"></i></a></li>
+          {% endif %}
 
-        {% if section.settings.email != empty %}
-          <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
-        {% endif %}
+          {% if settings.social_link_twitter != empty %}
+            <li><a href="{{ settings.social_link_twitter }}"> <i class="fab fa-twitter"></i></a></li>
+          {% endif %}
 
-        {% if section.settings.email != empty %}
-          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-        {% endif %}    
-    </ul>
+          {% if settings.social_link_pinterest != empty %}
+            <li><a href="{{ settings.social_link_pinterest }}"><i class="fab fa-pinterest"></i></a></li>
+          {% endif %}    
+      </ul>
+    </div>
   </div>
 </header>
 
@@ -37,7 +39,7 @@
         "type": "text",
         "label": "phone",
         "default": "0123456789"
-      }
+      }      
     ]
   }
 {% endschema %}
