@@ -2,7 +2,23 @@
   <div class="row">
     {{ section.settings.email }}
     {{ section.settings.phone }}
+    <ul>
+        {% if section.settings.email != empty %}
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        {% endif %}
 
+        {% if section.settings.email != empty %}
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        {% endif %}
+
+        {% if section.settings.email != empty %}
+          <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+        {% endif %}
+
+        {% if section.settings.email != empty %}
+          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        {% endif %}    
+    </ul>
   </div>
 </header>
 
