@@ -1,6 +1,17 @@
 <header>
-{{ section.settings.email }}
-{{ section.settings.phone }}
+  <div class="row">
+    {{ section.settings.email }}
+    {{ section.settings.phone }}
+
+    {% for block in section.blocks %}
+      <div class="grid-item" {{ block.shopify_attributes }}>
+        {% case block.type %}        
+        {% when 'image' %}
+          <img src="{{ block.settings.social | img_url }}" alt="">
+        {% endcase %}
+      </div>
+    {% endfor %}
+  </div>
 </header>
 
 {% schema %}
@@ -20,14 +31,14 @@
         "default": "0123456789"
       }
     ],
-	"max_blocks": 2,
+	"max_blocks": 5,
     "blocks": [
       {
         "type": "image",
         "name": "image",        
         "settings": [
           {
-            "id": "content",			
+            "id": "social",			
             "type": "image_picker",
             "label": "Social Icon"
           }
