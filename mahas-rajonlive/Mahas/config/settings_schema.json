@@ -1,0 +1,39 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Mahas Ecommerce Template",
+    "theme_version": "1.0.0",
+    "theme_author": "Shopify Canvas",
+    "theme_documentation_url": "https://www.shopifycanvas.com/",
+    "theme_support_url": "https://www.shopifycanvas.com/"
+  },
+  {
+    "name": "Social Icons",
+    "settings": [
+      {
+        "id": "social_link_facebook",
+        "type": "text",
+        "label": "Facebook Link",
+        "default": "https://www.facebook.com/Shopifycanvas"
+      },
+      {
+        "id": "social_link_instagram",
+        "type": "text",
+        "label": "Instagram Link",
+        "default": "https://www.instagram.com/Shopifycanvas"
+      },
+      {
+        "id": "social_link_twitter",
+        "type": "text",
+        "label": "Twitter Link",
+        "default": "https://www.twitter.com/Shopifycanvas"
+      },
+      {
+        "id": "social_link_pinterest",
+        "type": "text",
+        "label": "Pinterest Link",
+        "default": "https://www.pinterest.com/Shopifycanvas"
+      }
+    ]
+  }
+]
